@@ -18,20 +18,38 @@
                 <h2>LOUIS SORIN</h2>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Accueil</a>
+                <li class="nav-item nav-item-home">
+                    <a href="#home" class="nav-link nav-link-home">HOME</a>
+                </li>
+                <li class="nav-item nav-item-dropdown">
+                    <a href="#" class="nav-link">PAGES</a>
+                    <div class="nav-dropdown">
+                        <a href="#home" class="dropdown-link">Main Home</a>
+                        <a href="#portfolio" class="dropdown-link">Portfolio Gallery</a>
+                        <a href="#about" class="dropdown-link">About Me</a>
+                        <a href="#contact" class="dropdown-link">Contact</a>
+                    </div>
+                </li>
+                <li class="nav-item nav-item-dropdown">
+                    <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+                    <div class="nav-dropdown">
+                        <a href="#portfolio" class="dropdown-link">Galerie Photos</a>
+                        <a href="#films" class="dropdown-link">Vidéos</a>
+                        <a href="#demo-reel" class="dropdown-link">Bande Démo</a>
+                        <a href="#projects" class="dropdown-link">Projets Fiction</a>
+                        <a href="#documentaries" class="dropdown-link">Documentaires</a>
+                    </div>
+                </li>
+                <li class="nav-item nav-item-dropdown">
+                    <a href="#about" class="nav-link">ABOUT ME</a>
+                    <div class="nav-dropdown">
+                        <a href="#about" class="dropdown-link">Mon Parcours</a>
+                        <a href="#cv" class="dropdown-link">CV & Compétences</a>
+                        <a href="#formation" class="dropdown-link">Formation FEMIS</a>
+                    </div>
                 </li>
                 <li class="nav-item">
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#films" class="nav-link">Films</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">À propos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">CONTACT</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -42,106 +60,202 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="hero-overlay"></div>
+    <!-- Welcome Screen Section -->
+    <section id="home" class="welcome-screen">
+        <div class="video-background">
+            <video autoplay muted loop id="bg-video">
+                <source src="https://player.vimeo.com/external/YOUR_VIDEO_ID.mp4" type="video/mp4">
+                <!-- Placeholder for demo reel video -->
+            </video>
+            <div class="video-overlay"></div>
         </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-subtitle">DIRECTEUR DE LA PHOTOGRAPHIE</div>
-                <h1 class="hero-title">
-                    <span class="title-line">CRÉATEUR</span>
-                    <span class="title-line">D'UNIVERS</span>
-                    <span class="title-line highlight">VISUELS</span>
-                </h1>
-                <p class="hero-description">
-                    Spécialisé en cinéma, publicité et clips musicaux depuis plus de 8 ans.
-                    Je transforme vos idées en images mémorables.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">Découvrir mon travail</a>
-                    <a href="#contact" class="btn btn-secondary">Collaborer</a>
-                </div>
-            </div>
-            <div class="hero-reel">
-                <div class="reel-container">
-                    <div class="reel-preview">
-                        <div class="play-icon">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                <circle cx="40" cy="40" r="40" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
-                                <path d="M32 26L56 40L32 54V26Z" fill="white"/>
-                            </svg>
-                        </div>
-                        <h3>Bande Démo 2024</h3>
-                        <p>Une sélection de mes meilleurs moments cinématographiques</p>
+        
+        <div class="welcome-container">
+            <div class="welcome-content">
+                <div class="subtitle-text">NOW SHOWING, IT'S</div>
+                <h1 class="main-title">LOUIS SORIN</h1>
+                
+                <div class="welcome-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">🎬</div>
+                        <span>Direction de la photographie</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎭</div>
+                        <span>Cinéma & Fiction</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📺</div>
+                        <span>Publicité & Clips</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Showcase Section -->
-    <section id="portfolio" class="portfolio-showcase">
-        <div class="showcase-header">
-            <div class="container">
-                <div class="header-content">
-                    <span class="section-subtitle">MOVIE PRESENTATION</span>
-                    <h2 class="showcase-title">
-                        UNE LARGE VARIÉTÉ DE
-                        <span class="highlight">PORTFOLIOS</span>
-                    </h2>
-                    <a href="#films" class="btn btn-outline">Voir Plus</a>
-                </div>
+            
+            <div class="watch-now-btn">
+                <a href="#demo-reel" class="btn-watch">WATCH NOW</a>
             </div>
         </div>
         
-        <div class="showcase-grid">
-            <div class="showcase-item large">
-                <div class="project-image">
-                    <div class="image-placeholder">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <h3>LUMIÈRES D'AUTOMNE</h3>
-                                <p>Un court-métrage dramatique explorant les nuances de la lumière naturelle dans un récit intimiste sur la mémoire et le temps qui passe.</p>
-                                <div class="project-meta">
-                                    <span>Court-métrage</span>
-                                    <span>2024</span>
-                                    <span>35mm</span>
+        <div class="scroll-indicator">
+            <div class="scroll-text">SCROLL DOWN</div>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Demo Pages Mosaic Section -->
+    <section class="demo-pages-section">
+        <div class="demo-container">
+            <div class="demo-grid">
+                <div class="demo-item" data-page="main-home">
+                    <div class="demo-thumbnail">
+                        <div class="demo-image main-home-bg">
+                            <div class="demo-overlay">
+                                <div class="demo-content">
+                                    <h3>MAIN HOME</h3>
+                                    <p>Page d'accueil principale</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="showcase-item">
-                <div class="project-image">
-                    <div class="image-placeholder secondary">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <h3>RYTHMES URBAINS</h3>
-                                <p>Clip musical aux couleurs saturées</p>
-                                <div class="project-meta">
-                                    <span>Clip Musical</span>
-                                    <span>2024</span>
+                
+                <div class="demo-item" data-page="vertical-showcase">
+                    <div class="demo-thumbnail">
+                        <div class="demo-image vertical-showcase-bg">
+                            <div class="demo-overlay">
+                                <div class="demo-content">
+                                    <h3>VERTICAL SPLIT SHOWCASE</h3>
+                                    <p>Présentation verticale divisée</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="showcase-item">
-                <div class="project-image">
-                    <div class="image-placeholder tertiary">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <h3>ARTISANS D'HIER</h3>
-                                <p>Documentaire sur les métiers traditionnels</p>
-                                <div class="project-meta">
-                                    <span>Documentaire</span>
-                                    <span>2023</span>
+                
+                <div class="demo-item" data-page="horizontal-scroll">
+                    <div class="demo-thumbnail">
+                        <div class="demo-image horizontal-scroll-bg">
+                            <div class="demo-overlay">
+                                <div class="demo-content">
+                                    <h3>HORIZONTAL SCROLL SHOWCASE</h3>
+                                    <p>Défilement horizontal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-item" data-page="film-festival">
+                    <div class="demo-thumbnail">
+                        <div class="demo-image film-festival-bg">
+                            <div class="demo-overlay">
+                                <div class="demo-content">
+                                    <h3>FILM FESTIVAL</h3>
+                                    <p>Portfolio festival</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-item" data-page="letter-express">
+                    <div class="demo-thumbnail">
+                        <div class="demo-image letter-express-bg">
+                            <div class="demo-overlay">
+                                <div class="demo-content">
+                                    <h3>LETTER EXPRESS</h3>
+                                    <p>Style cinéma urbain</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-item" data-page="cypress-hill">
+                    <div class="demo-thumbnail">
+                        <div class="demo-image cypress-hill-bg">
+                            <div class="demo-overlay">
+                                <div class="demo-content">
+                                    <h3>CYPRESS HILL</h3>
+                                    <p>Style élégant et moderne</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-item" data-page="strikethrough">
+                    <div class="demo-thumbnail">
+                        <div class="demo-image strikethrough-bg">
+                            <div class="demo-overlay">
+                                <div class="demo-content">
+                                    <h3>STRIKETHROUGH</h3>
+                                    <p>Navigation innovante</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-item" data-page="crossed-scribble">
+                    <div class="demo-thumbnail">
+                        <div class="demo-image crossed-scribble-bg">
+                            <div class="demo-overlay">
+                                <div class="demo-content">
+                                    <h3>CROSSED OUT SCRIBBLE</h3>
+                                    <p>Style créatif</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-item" data-page="hotel-rose">
+                    <div class="demo-thumbnail">
+                        <div class="demo-image hotel-rose-bg">
+                            <div class="demo-overlay">
+                                <div class="demo-content">
+                                    <h3>HOTEL ROSE</h3>
+                                    <p>Cinéma intimiste</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-item" data-page="lake-district">
+                    <div class="demo-thumbnail">
+                        <div class="demo-image lake-district-bg">
+                            <div class="demo-overlay">
+                                <div class="demo-content">
+                                    <h3>THE LAKE DISTRICT</h3>
+                                    <p>Documentaire nature</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-item" data-page="berlin-texas">
+                    <div class="demo-thumbnail">
+                        <div class="demo-image berlin-texas-bg">
+                            <div class="demo-overlay">
+                                <div class="demo-content">
+                                    <h3>BERLIN, TEXAS</h3>
+                                    <p>Long-métrage</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-item" data-page="underground">
+                    <div class="demo-thumbnail">
+                        <div class="demo-image underground-bg">
+                            <div class="demo-overlay">
+                                <div class="demo-content">
+                                    <h3>UNDERGROUND</h3>
+                                    <p>Thriller urbain</p>
                                 </div>
                             </div>
                         </div>
@@ -151,36 +265,270 @@
         </div>
     </section>
 
-    <!-- Film Poster Section -->
-    <section class="film-poster-section">
-        <div class="poster-container">
-            <div class="poster-content">
-                <div class="poster-image">
-                    <div class="film-poster">
-                        <div class="poster-overlay">
-                            <div class="film-details">
-                                <span class="film-category">FILM POSTER</span>
-                                <h2>THE BROKEN DANCE</h2>
-                                <div class="awards">
-                                    <div class="award">
-                                        <span class="award-text">FESTIVAL</span>
-                                        <span class="award-text">CANNES</span>
-                                    </div>
-                                    <div class="award">
-                                        <span class="award-text">BEST</span>
-                                        <span class="award-text">CINEMATOGRAPHY</span>
-                                    </div>
-                                    <div class="award">
-                                        <span class="award-text">CRITICS</span>
-                                        <span class="award-text">CHOICE</span>
+    <!-- Portfolio Showcase Section - Style Coppola -->
+    <section id="portfolio" class="portfolio-showcase-white">
+        <div class="container">
+            <div class="showcase-header">
+                <div class="header-content">
+                    <span class="section-subtitle-dark">MOVIE PRESENTATION</span>
+                    <h2 class="showcase-title-dark">
+                        A WIDE VARIETY OF
+                        <span class="highlight-dark">PORTFOLIOS</span>
+                    </h2>
+                    <p class="section-description-dark">
+                        Découvrez une sélection variée de mes travaux en direction de la photographie, 
+                        allant du cinéma indépendant aux productions commerciales.
+                    </p>
+                    <a href="#films" class="btn btn-outline-dark">View More</a>
+                </div>
+            </div>
+            
+            <div class="showcase-grid-white">
+                <div class="showcase-item-white main-project">
+                    <div class="project-image-white">
+                        <div class="image-placeholder-white primary">
+                            <div class="project-overlay-white">
+                                <div class="project-info-white">
+                                    <h3>LUMIÈRES D'AUTOMNE</h3>
+                                    <p>Court-métrage dramatique explorant les nuances de la lumière naturelle dans un récit intimiste sur la mémoire et le temps qui passe.</p>
+                                    <div class="project-meta-white">
+                                        <span>Court-métrage</span>
+                                        <span>2024</span>
+                                        <span>35mm</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="poster-text">
-                    <h2>PRÉSENTER VOS FILMS, PROMOUVOIR ACTUALITÉS ET FESTIVALS</h2>
+                
+                <div class="showcase-item-white">
+                    <div class="project-image-white">
+                        <div class="image-placeholder-white secondary">
+                            <div class="project-overlay-white">
+                                <div class="project-info-white">
+                                    <h3>RYTHMES URBAINS</h3>
+                                    <p>Clip musical aux couleurs saturées</p>
+                                    <div class="project-meta-white">
+                                        <span>Clip Musical</span>
+                                        <span>2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item-white">
+                    <div class="project-image-white">
+                        <div class="image-placeholder-white tertiary">
+                            <div class="project-overlay-white">
+                                <div class="project-info-white">
+                                    <h3>ARTISANS D'HIER</h3>
+                                    <p>Documentaire sur les métiers traditionnels</p>
+                                    <div class="project-meta-white">
+                                        <span>Documentaire</span>
+                                        <span>2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-item-white">
+                    <div class="project-image-white">
+                        <div class="image-placeholder-white quaternary">
+                            <div class="project-overlay-white">
+                                <div class="project-info-white">
+                                    <h3>NUIT BLANCHE</h3>
+                                    <p>Publicité pour marque de luxe</p>
+                                    <div class="project-meta-white">
+                                        <span>Publicité</span>
+                                        <span>2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-item-white">
+                    <div class="project-image-white">
+                        <div class="image-placeholder-white quinary">
+                            <div class="project-overlay-white">
+                                <div class="project-info-white">
+                                    <h3>FRAGMENTS</h3>
+                                    <p>Film expérimental</p>
+                                    <div class="project-meta-white">
+                                        <span>Expérimental</span>
+                                        <span>2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Last Film Section - Style Coppola -->
+    <section class="my-last-film-section">
+        <div class="film-presentation-container">
+            <div class="film-poster-side">
+                <div class="main-film-poster">
+                    <div class="poster-image">
+                        <div class="poster-bg">
+                            <div class="poster-overlay">
+                                <div class="film-info-poster">
+                                    <span class="film-category-poster">FILM POSTER</span>
+                                    <h2 class="film-title-poster">LES ENFANTS DU<br>SOLEIL NOIR</h2>
+                                    <div class="awards-section">
+                                        <div class="award-item">
+                                            <span class="award-top">FEMIS</span>
+                                            <span class="award-bottom">2025</span>
+                                        </div>
+                                        <div class="award-item">
+                                            <span class="award-top">MEILLEURE</span>
+                                            <span class="award-bottom">PHOTOGRAPHIE</span>
+                                        </div>
+                                        <div class="award-item">
+                                            <span class="award-top">FILM DE</span>
+                                            <span class="award-bottom">DIPLÔME</span>
+                                        </div>
+                                    </div>
+                                    <div class="film-metadata">
+                                        <p>Réalisateur: Jean Moreau</p>
+                                        <p>FEMIS 2025 - Travail de Fin d'Étude</p>
+                                        <p><strong>Direction de la photographie: Louis Sorin</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="film-text-side">
+                <div class="film-description">
+                    <h2 class="section-title-poster">MY LAST FILM</h2>
+                    <h3 class="film-subtitle">PRÉSENTER VOS FILMS,<br>PROMOUVOIR ACTUALITÉS<br>ET FESTIVALS</h3>
+                    <div class="film-details-text">
+                        <p>
+                            "Les Enfants du Soleil Noir" représente l'aboutissement de ma formation à la FEMIS. 
+                            Ce film de diplôme explore les thèmes de la mémoire collective et de l'identité 
+                            à travers une photographie intimiste et contemplative.
+                        </p>
+                        <p>
+                            Tourné en 35mm, le projet met l'accent sur la lumière naturelle et les jeux 
+                            d'ombres pour créer une atmosphère unique qui sert la narration du réalisateur 
+                            Jean Moreau.
+                        </p>
+                        <div class="technical-specs">
+                            <div class="spec-item">
+                                <strong>Format:</strong> 35mm Anamorphique
+                            </div>
+                            <div class="spec-item">
+                                <strong>Durée:</strong> 28 minutes
+                            </div>
+                            <div class="spec-item">
+                                <strong>Production:</strong> FEMIS 2025
+                            </div>
+                        </div>
+                        <a href="#demo-reel" class="btn-film-details">Voir la bande-démo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horizontal Scroll Showcase Section -->
+    <section class="horizontal-scroll-section">
+        <div class="container">
+            <div class="horizontal-header">
+                <h2 class="horizontal-title">HORIZONTAL SCROLL SHOWCASE</h2>
+            </div>
+            
+            <div class="horizontal-showcase">
+                <div class="showcase-track">
+                    <div class="horizontal-item featured">
+                        <div class="horizontal-image">
+                            <div class="image-bg featured-film">
+                                <div class="film-overlay-horizontal">
+                                    <div class="film-info-horizontal">
+                                        <span class="film-category">A MAN WHO LAUGHS</span>
+                                        <h3>TOMA</h3>
+                                        <div class="film-details">
+                                            <span>Fiction • 2024</span>
+                                            <span>Direction: Marie Dubois</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="horizontal-item">
+                        <div class="horizontal-image">
+                            <div class="image-bg film-2">
+                                <div class="film-overlay-horizontal">
+                                    <div class="film-info-horizontal">
+                                        <h4>FRAGMENTS DE LUMIÈRE</h4>
+                                        <p>Court-métrage expérimental</p>
+                                        <span class="year">2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="horizontal-item">
+                        <div class="horizontal-image">
+                            <div class="image-bg film-3">
+                                <div class="film-overlay-horizontal">
+                                    <div class="film-info-horizontal">
+                                        <h4>NUIT URBAINE</h4>
+                                        <p>Clip musical</p>
+                                        <span class="year">2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="horizontal-item">
+                        <div class="horizontal-image">
+                            <div class="image-bg film-4">
+                                <div class="film-overlay-horizontal">
+                                    <div class="film-info-horizontal">
+                                        <h4>TERRES SAUVAGES</h4>
+                                        <p>Documentaire nature</p>
+                                        <span class="year">2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="horizontal-item">
+                        <div class="horizontal-image">
+                            <div class="image-bg film-5">
+                                <div class="film-overlay-horizontal">
+                                    <div class="film-info-horizontal">
+                                        <h4>ÉCHOS DU PASSÉ</h4>
+                                        <p>Drame historique</p>
+                                        <span class="year">2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-controls">
+                    <button class="scroll-btn prev" aria-label="Précédent">‹</button>
+                    <button class="scroll-btn next" aria-label="Suivant">›</button>
                 </div>
             </div>
         </div>
@@ -190,65 +538,69 @@
     <section id="films" class="films-section">
         <div class="container">
             <div class="films-header">
-                <h2 class="section-title">SÉLECTION DE FILMS</h2>
+                <h2 class="section-title">FILMOGRAPHIE ACADÉMIQUE & PROJETS</h2>
                 <p class="section-description">Une collection de mes œuvres les plus représentatives</p>
             </div>
             
-            <!-- Horizontal Scroll Showcase -->
-            <div class="horizontal-showcase">
-                <div class="showcase-track">
-                    <div class="film-card large">
-                        <div class="film-image">
-                            <div class="image-placeholder main-film">
-                                <div class="film-overlay">
-                                    <div class="film-info">
-                                        <span class="film-year">PRIMÉ AU FESTIVAL 2024</span>
-                                        <h3>BACK TO NATURE</h3>
-                                        <p>Long-métrage / Fiction</p>
-                                        <div class="film-awards">
-                                            <span class="award-badge">Meilleure Photographie</span>
-                                            <span class="award-badge">Festival de Cannes</span>
-                                        </div>
-                                    </div>
+            <div class="films-grid">
+                <div class="film-card">
+                    <div class="film-poster">
+                        <div class="poster-placeholder film-placeholder-1">
+                            <div class="film-overlay">
+                                <div class="film-details-card">
+                                    <h3>Les Enfants du Soleil Noir</h3>
+                                    <p class="director">Réalisateur: Jean Moreau</p>
+                                    <p class="year">2025</p>
+                                    <p class="role"><strong>Direction de la photographie</strong></p>
+                                    <p class="context">Film de diplôme FEMIS</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="film-card">
-                        <div class="film-image">
-                            <div class="image-placeholder film-1">
-                                <div class="film-overlay">
-                                    <div class="film-info">
-                                        <h4>FLORA</h4>
-                                        <p>Court-métrage dramatique</p>
-                                    </div>
+                </div>
+                
+                <div class="film-card">
+                    <div class="film-poster">
+                        <div class="poster-placeholder film-placeholder-2">
+                            <div class="film-overlay">
+                                <div class="film-details-card">
+                                    <h3>Lumières d'Automne</h3>
+                                    <p class="director">Réalisateur: Sophie Martin</p>
+                                    <p class="year">2024</p>
+                                    <p class="role"><strong>Direction de la photographie</strong></p>
+                                    <p class="context">Exercice FEMIS</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="film-card">
-                        <div class="film-image">
-                            <div class="image-placeholder film-2">
-                                <div class="film-overlay">
-                                    <div class="film-info">
-                                        <h4>THE FIFTH DAY</h4>
-                                        <p>Thriller psychologique</p>
-                                    </div>
+                </div>
+                
+                <div class="film-card">
+                    <div class="film-poster">
+                        <div class="poster-placeholder film-placeholder-3">
+                            <div class="film-overlay">
+                                <div class="film-details-card">
+                                    <h3>Rythmes Urbains</h3>
+                                    <p class="director">Réalisateur: Alex Rivera</p>
+                                    <p class="year">2024</p>
+                                    <p class="role"><strong>Direction de la photographie</strong></p>
+                                    <p class="context">Collaboration étudiante</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="film-card">
-                        <div class="film-image">
-                            <div class="image-placeholder film-3">
-                                <div class="film-overlay">
-                                    <div class="film-info">
-                                        <h4>THE VIOLIN TEACHER</h4>
-                                        <p>Drame familial</p>
-                                    </div>
+                </div>
+                
+                <div class="film-card">
+                    <div class="film-poster">
+                        <div class="poster-placeholder film-placeholder-4">
+                            <div class="film-overlay">
+                                <div class="film-details-card">
+                                    <h3>Artisans d'Hier</h3>
+                                    <p class="director">Réalisateur: Claire Dubois</p>
+                                    <p class="year">2023</p>
+                                    <p class="role"><strong>Direction de la photographie</strong></p>
+                                    <p class="context">Exercice FEMIS</p>
                                 </div>
                             </div>
                         </div>
@@ -258,73 +610,126 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- About Section - Updated for Coppola Style -->
+    <section id="about" class="about-section-new">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <span class="section-subtitle">PROFIL PROFESSIONNEL</span>
-                    <h2 class="section-title">LOUIS SORIN</h2>
-                    <div class="about-description">
-                        <p>
-                            Directeur de la photographie passionné depuis plus de 8 ans, je me spécialise 
-                            dans la création d'univers visuels uniques pour le cinéma, la publicité et 
-                            les clips musicaux.
+            <!-- Portrait & Bio Section -->
+            <div class="about-hero">
+                <div class="about-text-content">
+                    <span class="section-subtitle-about">MON PARCOURS</span>
+                    <h2 class="about-title">À PROPOS DE<br>LOUIS SORIN</h2>
+                    <div class="bio-content">
+                        <p class="bio-intro">
+                            Diplômé de la FEMIS (École Nationale Supérieure des Métiers de l'Image et du Son), 
+                            promotion 2025, je me spécialise dans la direction de la photographie pour le cinéma, 
+                            la fiction, la publicité et les clips musicaux.
                         </p>
-                        <p>
-                            Diplômé de l'École Nationale Supérieure des Métiers de l'Image et du Son (ÉNSMIS), 
-                            j'ai collaboré sur plus de 50 projets, des courts-métrages primés aux campagnes 
-                            publicitaires internationales.
+                        <p class="bio-main">
+                            Mon approche de l'image s'inspire des maîtres de la photographie cinématographique 
+                            comme Roger Deakins et Emmanuel Lubezki. Je privilégie une approche sensible de 
+                            la lumière, cherchant à servir l'émotion et renforcer la narration visuelle 
+                            de chaque projet.
                         </p>
-                        <p>
-                            Mon approche combine sensibilité artistique et maîtrise technique pour servir 
-                            l'émotion et renforcer la narration visuelle.
+                        <p class="bio-genres">
+                            J'explore avec passion différents genres : de la fiction intimiste au documentaire 
+                            engagé, en passant par la publicité créative et les clips musicaux expérimentaux. 
+                            Chaque projet est une opportunité d'innover et de repousser les limites artistiques.
                         </p>
                     </div>
+                </div>
+                
+                <div class="about-visual-side">
+                    <div class="profile-photo">
+                        <div class="photo-frame">
+                            <div class="profile-placeholder">
+                                <span>Photo Professionnelle<br>Louis Sorin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CV & Compétences Section -->
+            <div class="cv-skills-section">
+                <div class="cv-header">
+                    <h3 class="cv-title">PARCOURS & COMPÉTENCES</h3>
+                </div>
+                
+                <div class="cv-grid">
+                    <div class="cv-column">
+                        <div class="cv-block">
+                            <h4>Formation</h4>
+                            <div class="cv-item">
+                                <div class="cv-year">2025</div>
+                                <div class="cv-details">
+                                    <strong>FEMIS, promotion 2025</strong>
+                                    <p>Spécialisation Direction de la Photographie</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cv-block">
+                            <h4>Stages & Collaborations</h4>
+                            <div class="cv-item">
+                                <div class="cv-year">2024</div>
+                                <div class="cv-details">
+                                    <strong>Assistant Cadreur</strong>
+                                    <p>Productions Atlantique Films</p>
+                                </div>
+                            </div>
+                            <div class="cv-item">
+                                <div class="cv-year">2023</div>
+                                <div class="cv-details">
+                                    <strong>Stagiaire Éclairage</strong>
+                                    <p>TSF Productions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <div class="expertise">
-                        <h3>Expertise Technique</h3>
-                        <div class="expertise-grid">
-                            <div class="expertise-item">
-                                <h4>Caméras</h4>
-                                <p>RED, ARRI Alexa, Sony FX, Canon C-Series</p>
-                            </div>
-                            <div class="expertise-item">
-                                <h4>Post-Production</h4>
-                                <p>DaVinci Resolve, Color Grading, LUT Creation</p>
-                            </div>
-                            <div class="expertise-item">
-                                <h4>Éclairage</h4>
-                                <p>LED, HMI, Tungsten, Éclairage naturel</p>
-                            </div>
-                            <div class="expertise-item">
-                                <h4>Formats</h4>
-                                <p>35mm, 16mm, Digital Cinema, Anamorphique</p>
+                    <div class="cv-column">
+                        <div class="cv-block">
+                            <h4>Compétences Techniques</h4>
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <h5>Caméras Maîtrisées</h5>
+                                    <ul>
+                                        <li>ARRI Alexa Mini/LF</li>
+                                        <li>RED Komodo/Raptor</li>
+                                        <li>Sony FX6/FX9</li>
+                                        <li>Canon C70/C300</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skill-category">
+                                    <h5>Équipements Lumière</h5>
+                                    <ul>
+                                        <li>LED (ARRI, Aputure)</li>
+                                        <li>HMI (Tungsten)</li>
+                                        <li>Éclairage naturel</li>
+                                        <li>Réflecteurs & diffuseurs</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skill-category">
+                                    <h5>Logiciels</h5>
+                                    <ul>
+                                        <li>DaVinci Resolve</li>
+                                        <li>Avid Media Composer</li>
+                                        <li>Adobe Premiere</li>
+                                        <li>Color Grading avancé</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="about-visual">
-                    <div class="profile-image">
-                        <div class="image-placeholder profile">
-                            <span>Photo Profil</span>
-                        </div>
-                    </div>
-                    <div class="achievements">
-                        <div class="achievement">
-                            <span class="number">50+</span>
-                            <span class="label">Projets Réalisés</span>
-                        </div>
-                        <div class="achievement">
-                            <span class="number">15</span>
-                            <span class="label">Prix Remportés</span>
-                        </div>
-                        <div class="achievement">
-                            <span class="number">8</span>
-                            <span class="label">Années d'Expérience</span>
-                        </div>
-                    </div>
+                <div class="cv-download">
+                    <a href="#" class="btn-download-cv">
+                        <span class="download-icon">📄</span>
+                        TÉLÉCHARGER CV (PDF)
+                    </a>
                 </div>
             </div>
         </div>
@@ -418,37 +823,213 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Contact Section - Coppola Style -->
+    <section id="contact" class="contact-section-new">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>LOUIS SORIN</h3>
-                    <p>Directeur de la Photographie</p>
-                    <p>Paris, France</p>
+            <div class="contact-content-new">
+                <div class="contact-info-side">
+                    <span class="section-subtitle-contact">COLLABORATION</span>
+                    <h2 class="contact-title">CONTACTEZ-MOI</h2>
+                    <p class="contact-description">
+                        Vous avez un projet en tête ? Que ce soit pour un court-métrage, 
+                        une publicité ou un clip musical, discutons de votre vision et 
+                        de la manière dont nous pouvons la concrétiser ensemble.
+                    </p>
+                    
+                    <div class="contact-details-new">
+                        <div class="contact-item-new">
+                            <h4>Email Professionnel</h4>
+                            <a href="mailto:louis.sorin@cinematographe.fr">louis.sorin@cinematographe.fr</a>
+                        </div>
+                        <div class="contact-item-new">
+                            <h4>Téléphone</h4>
+                            <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                        </div>
+                        <div class="contact-item-new">
+                            <h4>Localisation</h4>
+                            <span>Paris, France</span>
+                        </div>
+                        <div class="contact-item-new">
+                            <h4>Disponibilité</h4>
+                            <span>Projets nationaux et internationaux</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links-contact">
+                        <h4>Liens Externes</h4>
+                        <div class="social-icons-contact">
+                            <a href="#" class="social-icon-contact vimeo" target="_blank" aria-label="Vimeo">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197c1.185-1.044 2.351-2.084 3.501-3.128C5.08 2.701 6.266 1.984 7.055 1.91c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.868 3.434-5.757 6.762-5.637 2.473.06 3.628 1.664 3.493 4.797l-.013.01z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon-contact linkedin" target="_blank" aria-label="LinkedIn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon-contact instagram" target="_blank" aria-label="Instagram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-section">
-                        <h4>Portfolio</h4>
-                        <a href="#films">Films</a>
-                        <a href="#portfolio">Projets</a>
-                        <a href="#about">Profil</a>
+                
+                <form class="contact-form-new">
+                    <h3>DÉMARRER UN PROJET</h3>
+                    <div class="form-row-new">
+                        <div class="form-group-new">
+                            <label for="name">Nom *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group-new">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
                     </div>
-                    <div class="footer-section">
-                        <h4>Réseaux</h4>
-                        <a href="#" target="_blank">Instagram</a>
-                        <a href="#" target="_blank">Vimeo</a>
-                        <a href="#" target="_blank">LinkedIn</a>
+                    
+                    <div class="form-row-new">
+                        <div class="form-group-new">
+                            <label for="company">Société</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group-new">
+                            <label for="budget">Budget estimé</label>
+                            <select id="budget" name="budget">
+                                <option value="">Sélectionnez une fourchette</option>
+                                <option value="5k-15k">5K - 15K €</option>
+                                <option value="15k-50k">15K - 50K €</option>
+                                <option value="50k-100k">50K - 100K €</option>
+                                <option value="100k+">100K+ €</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="footer-section">
-                        <h4>Contact</h4>
-                        <a href="mailto:louis.sorin@cinematographe.fr">Email</a>
-                        <a href="tel:+33123456789">Téléphone</a>
+                    
+                    <div class="form-group-new">
+                        <label for="project">Type de projet *</label>
+                        <select id="project" name="project" required>
+                            <option value="">Sélectionnez un type</option>
+                            <option value="court-metrage">Court-métrage</option>
+                            <option value="long-metrage">Long-métrage</option>
+                            <option value="clip">Clip musical</option>
+                            <option value="documentaire">Documentaire</option>
+                            <option value="publicite">Publicité</option>
+                            <option value="corporate">Vidéo corporate</option>
+                            <option value="autre">Autre</option>
+                        </select>
                     </div>
-                </div>
+                    
+                    <div class="form-group-new">
+                        <label for="message">Décrivez votre projet *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Parlez-moi de votre vision, de l'ambiance souhaitée, du calendrier..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit-new">ENVOYER LA DEMANDE</button>
+                </form>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Louis Sorin. Tous droits réservés.</p>
+        </div>
+    </section>
+
+    <!-- Footer - Coppola Style -->
+    <footer class="footer-coppola">
+        <div class="container">
+            <div class="footer-content-new">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h3 class="footer-title">LOUIS SORIN</h3>
+                        <p class="footer-subtitle">Directeur de la Photographie</p>
+                        <p class="footer-location">Paris, France</p>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <h4>Contact Direct</h4>
+                        <div class="contact-item-footer">
+                            <span class="contact-label">Email:</span>
+                            <a href="mailto:louis.sorin@cinematographe.fr">louis.sorin@cinematographe.fr</a>
+                        </div>
+                        <div class="contact-item-footer">
+                            <span class="contact-label">Téléphone:</span>
+                            <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <h4>Réseaux & Portfolio</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link vimeo" target="_blank" aria-label="Vimeo">
+                                <div class="social-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197c1.185-1.044 2.351-2.084 3.501-3.128C5.08 2.701 6.266 1.984 7.055 1.91c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.868 3.434-5.757 6.762-5.637 2.473.06 3.628 1.664 3.493 4.797l-.013.01z"/>
+                                    </svg>
+                                </div>
+                                <span>Vimeo</span>
+                            </a>
+                            
+                            <a href="#" class="social-link linkedin" target="_blank" aria-label="LinkedIn">
+                                <div class="social-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </div>
+                                <span>LinkedIn</span>
+                            </a>
+                            
+                            <a href="#" class="social-link instagram" target="_blank" aria-label="Instagram">
+                                <div class="social-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    </svg>
+                                </div>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-links-section">
+                        <div class="footer-column">
+                            <h5>Navigation</h5>
+                            <a href="#home">Accueil</a>
+                            <a href="#portfolio">Portfolio</a>
+                            <a href="#films">Films</a>
+                            <a href="#about">À propos</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h5>Services</h5>
+                            <a href="#">Direction de la Photographie</a>
+                            <a href="#">Cinéma & Fiction</a>
+                            <a href="#">Publicité</a>
+                            <a href="#">Clips Musicaux</a>
+                            <a href="#">Documentaires</a>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h5>Collaborations</h5>
+                            <a href="#">Réalisateurs</a>
+                            <a href="#">Producteurs</a>
+                            <a href="#">Agences</a>
+                            <a href="#">Marques</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-back-to-top">
+                        <button class="back-to-top-btn" aria-label="Retour en haut">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 3l7 7-1.41 1.41L10 5.83l-5.59 5.58L3 10l7-7z"/>
+                            </svg>
+                            <span>Retour en haut</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Louis Sorin. Tous droits réservés. | Direction de la Photographie</p>
+                </div>
             </div>
         </div>
     </footer>
