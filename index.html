@@ -15,41 +15,23 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>LOUIS SORIN</h2>
+                <a href="index.html"><h2>LOUIS SORIN</h2></a>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item nav-item-home">
-                    <a href="#home" class="nav-link nav-link-home">HOME</a>
-                </li>
-                <li class="nav-item nav-item-dropdown">
-                    <a href="#" class="nav-link">PAGES</a>
-                    <div class="nav-dropdown">
-                        <a href="#home" class="dropdown-link">Main Home</a>
-                        <a href="#portfolio" class="dropdown-link">Portfolio Gallery</a>
-                        <a href="#about" class="dropdown-link">About Me</a>
-                        <a href="#contact" class="dropdown-link">Contact</a>
-                    </div>
-                </li>
-                <li class="nav-item nav-item-dropdown">
-                    <a href="#portfolio" class="nav-link">PORTFOLIO</a>
-                    <div class="nav-dropdown">
-                        <a href="#portfolio" class="dropdown-link">Galerie Photos</a>
-                        <a href="#films" class="dropdown-link">Vidéos</a>
-                        <a href="#demo-reel" class="dropdown-link">Bande Démo</a>
-                        <a href="#projects" class="dropdown-link">Projets Fiction</a>
-                        <a href="#documentaries" class="dropdown-link">Documentaires</a>
-                    </div>
-                </li>
-                <li class="nav-item nav-item-dropdown">
-                    <a href="#about" class="nav-link">ABOUT ME</a>
-                    <div class="nav-dropdown">
-                        <a href="#about" class="dropdown-link">Mon Parcours</a>
-                        <a href="#cv" class="dropdown-link">CV & Compétences</a>
-                        <a href="#formation" class="dropdown-link">Formation FEMIS</a>
-                    </div>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">CONTACT</a>
+                    <a href="showreel.html" class="nav-link">SHOWREEL</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">À PROPOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">CONTACT</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -71,7 +53,7 @@
         
         <div class="welcome-container">
             <div class="welcome-content">
-                <h1 class="main-title">LOUIS<br>SORIN</h1>
+                <h1 class="main-title"><span class="main-title-accent">Louis SORIN</span></h1>
                 <div class="subtitle-text">CINEMATOGRAPHER</div>
                 
                 <div class="hero-cta">
@@ -90,162 +72,84 @@
     <!-- Demo Pages Mosaic Section -->
     <section class="demo-pages-section">
         <div class="demo-container">
+            <div class="demo-header">
+                <h2 class="demo-section-title">
+                    DÉCOUVREZ MON 
+                    <span class="highlight-coral">UNIVERS</span>
+                </h2>
+                <p class="demo-section-subtitle">Explorez les différentes facettes de mon travail</p>
+            </div>
+            
             <div class="demo-grid">
-                <div class="demo-item" data-page="portfolio">
+                <!-- Carte 1: Showreel -->
+                <a href="showreel.html" class="demo-item" data-page="showreel">
                     <div class="demo-thumbnail">
-                        <div class="demo-image main-home-bg" style="background-image: url('images/toxic-underground.png'); background-size: cover;">
+                        <div class="demo-image showreel-bg" style="background-image: url('images/toxic-underground.png'); background-size: cover;">
                             <div class="demo-overlay">
                                 <div class="demo-content">
-                                    <h3>TOXIC UNDERGROUND</h3>
-                                    <p>2025, Caroline Favé - Alexa 35</p>
+                                    <h3>SHOWREEL</h3>
+                                    <p>Bande démo cinématographique</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 
-                <div class="demo-item" data-page="portfolio">
+                <!-- Carte 2: Portfolio -->
+                <a href="portfolio.html" class="demo-item" data-page="portfolio">
                     <div class="demo-thumbnail">
-                        <div class="demo-image vertical-showcase-bg" style="background-image: url('images/crepuscule.png'); background-size: cover;">
+                        <div class="demo-image portfolio-bg" style="background-image: url('images/enfant-soleil-noir.png'); background-size: cover;">
                             <div class="demo-overlay">
                                 <div class="demo-content">
-                                    <h3>LE CRÉPUSCULE</h3>
-                                    <p>2025, Emilien Blondel Maës - Alexa 35</p>
+                                    <h3>PORTFOLIO</h3>
+                                    <p>Galerie photographique</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 
-                <div class="demo-item" data-page="portfolio">
+                <!-- Carte 3: Projets -->
+                <a href="projets.html" class="demo-item" data-page="projects">
                     <div class="demo-thumbnail">
-                        <div class="demo-image horizontal-scroll-bg" style="background-image: url('images/enfant-soleil-noir.png'); background-size: cover;">
+                        <div class="demo-image projects-bg" style="background-image: url('images/crepuscule.png'); background-size: cover;">
                             <div class="demo-overlay">
                                 <div class="demo-content">
-                                    <h3>L'ENFANT DU SOLEIL NOIR</h3>
-                                    <p>2025, Louis Sorin - Alexa mini LF + Sony FX6</p>
+                                    <h3>PROJETS</h3>
+                                    <p>Filmographie complète</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 
-                <div class="demo-item" data-page="portfolio">
+                <!-- Carte 4: À Propos -->
+                <a href="about.html" class="demo-item" data-page="about">
                     <div class="demo-thumbnail">
-                        <div class="demo-image film-festival-bg" style="background-image: url('images/fossile.png'); background-size: cover;">
+                        <div class="demo-image about-bg" style="background-image: url('images/forest.png'); background-size: cover;">
                             <div class="demo-overlay">
                                 <div class="demo-content">
-                                    <h3>FOSSILE</h3>
-                                    <p>2023, Timothée Zourabichvili - Alexa Classic</p>
+                                    <h3>À PROPOS</h3>
+                                    <p>Mon parcours & ma vision</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 
-                <div class="demo-item" data-page="portfolio">
+                <!-- Carte 5: Contact -->
+                <a href="contact.html" class="demo-item" data-page="contact">
                     <div class="demo-thumbnail">
-                        <div class="demo-image letter-express-bg" style="background-image: url('images/sinker.png'); background-size: cover;">
+                        <div class="demo-image contact-bg" style="background-image: url('images/fossile.png'); background-size: cover;">
                             <div class="demo-overlay">
                                 <div class="demo-content">
-                                    <h3>SINKER</h3>
-                                    <p>2024, Timothée Zourabichvili - Sony F3</p>
+                                    <h3>CONTACT</h3>
+                                    <p>Travaillons ensemble</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="demo-item" data-page="portfolio">
-                    <div class="demo-thumbnail">
-                        <div class="demo-image cypress-hill-bg" style="background-image: url('images/forest.png'); background-size: cover;">
-                            <div class="demo-overlay">
-                                <div class="demo-content">
-                                    <h3>FOREST</h3>
-                                    <p>Aaton XTR prod S16</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="demo-item" data-page="strikethrough">
-                    <div class="demo-thumbnail">
-                        <div class="demo-image strikethrough-bg" style="background-image: url('images/toxic-cover-2.png'); background-size: cover;">
-                            <div class="demo-overlay">
-                                <div class="demo-content">
-                                    <h3>TOXIC UNDERGROUND ALT</h3>
-                                    <p>Variante visuelle - Alexa 35</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="demo-item" data-page="crossed-scribble">
-                    <div class="demo-thumbnail">
-                        <div class="demo-image crossed-scribble-bg" style="background-image: url('images/crepuscule-cover.png'); background-size: cover;">
-                            <div class="demo-overlay">
-                                <div class="demo-content">
-                                    <h3>LE CRÉPUSCULE ALT</h3>
-                                    <p>Version alternative - Alexa 35</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="demo-item" data-page="hotel-rose">
-                    <div class="demo-thumbnail">
-                        <div class="demo-image hotel-rose-bg" style="background-image: url('images/enfant-soleil-noir-2.png'); background-size: cover;">
-                            <div class="demo-overlay">
-                                <div class="demo-content">
-                                    <h3>L'ENFANT DU SOLEIL NOIR V2</h3>
-                                    <p>Autre angle - Alexa mini LF</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="demo-item" data-page="lake-district">
-                    <div class="demo-thumbnail">
-                        <div class="demo-image lake-district-bg" style="background-image: url('images/forest-cover-2.png'); background-size: cover;">
-                            <div class="demo-overlay">
-                                <div class="demo-content">
-                                    <h3>FOREST ALT</h3>
-                                    <p>Version paysage - Aaton XTR prod S16</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="demo-item" data-page="berlin-texas">
-                    <div class="demo-thumbnail">
-                        <div class="demo-image berlin-texas-bg" style="background-image: url('images/fossile.png'); background-size: cover;">
-                            <div class="demo-overlay">
-                                <div class="demo-content">
-                                    <h3>FOSSILE - MAKING OF</h3>
-                                    <p>Behind the scenes - Alexa Classic</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="demo-item" data-page="underground">
-                    <div class="demo-thumbnail">
-                        <div class="demo-image underground-bg" style="background-image: url('images/sinker.png'); background-size: cover;">
-                            <div class="demo-overlay">
-                                <div class="demo-content">
-                                    <h3>SINKER - EXTRAITS</h3>
-                                    <p>Séquences choisies - Sony F3</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -269,7 +173,7 @@
             </div>
             
             <div class="showcase-grid-white">
-                <div class="showcase-item-white main-project">
+                <a href="#films" class="showcase-item-white main-project">
                     <div class="project-image-white">
                         <img src="images/enfant-soleil-noir.png" alt="L'Enfant du Soleil Noir" class="project-image">
                         <div class="image-placeholder-white primary">
@@ -286,9 +190,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 
-                <div class="showcase-item-white">
+                <a href="#projects" class="showcase-item-white">
                     <div class="project-image-white">
                         <img src="images/toxic-underground.png" alt="Toxic Underground" class="project-image">
                         <div class="image-placeholder-white secondary">
@@ -304,9 +208,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 
-                <div class="showcase-item-white">
+                <a href="#projects" class="showcase-item-white">
                     <div class="project-image-white">
                         <img src="images/crepuscule.png" alt="Le Crépuscule" class="project-image">
                         <div class="image-placeholder-white tertiary">
@@ -322,9 +226,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="showcase-item-white">
+                <a href="#projects" class="showcase-item-white">
                     <div class="project-image-white">
                         <img src="images/fossile.png" alt="Fossile" class="project-image">
                         <div class="image-placeholder-white quaternary">
@@ -340,9 +244,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="showcase-item-white">
+                <a href="#projects" class="showcase-item-white">
                     <div class="project-image-white">
                         <img src="images/sinker.png" alt="Sinker" class="project-image">
                         <div class="image-placeholder-white quinary">
@@ -358,9 +262,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="showcase-item-white">
+                <a href="#films" class="showcase-item-white">
                     <div class="project-image-white">
                         <img src="images/forest.png" alt="Forest" class="project-image">
                         <div class="image-placeholder-white quinary">
@@ -376,7 +280,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -395,131 +299,6 @@
                             à travers une photographie intimiste et contemplative, mettant l'accent sur la lumière naturelle et les jeux d'ombres pour créer une atmosphère unique.
                         </p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section - Updated for Coppola Style -->
-    <section id="about" class="about-section-new">
-        <div class="container">
-            <!-- Portrait & Bio Section -->
-            <div class="about-hero">
-                <div class="about-visual-side">
-                    <div class="profile-photo">
-                        <div class="photo-frame">
-                            <div class="profile-placeholder">
-                                <span>Photo Professionnelle<br>Louis Sorin</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-text-content">
-                    <span class="section-subtitle-about">MON PARCOURS</span>
-                    <h2 class="about-title">À PROPOS DE<br>LOUIS SORIN</h2>
-                    <div class="bio-content">
-                        <p class="bio-intro">
-                            Diplômé de la FEMIS (École Nationale Supérieure des Métiers de l'Image et du Son), 
-                            promotion 2025, je me spécialise dans la direction de la photographie pour le cinéma, 
-                            la fiction, la publicité et les clips musicaux.
-                        </p>
-                        <p class="bio-main">
-                            Mon approche de l'image s'inspire des maîtres de la photographie cinématographique 
-                            comme Roger Deakins et Emmanuel Lubezki. Je privilégie une approche sensible de 
-                            la lumière, cherchant à servir l'émotion et renforcer la narration visuelle 
-                            de chaque projet.
-                        </p>
-                        <p class="bio-genres">
-                            J'explore avec passion différents genres : de la fiction intimiste au documentaire 
-                            engagé, en passant par la publicité créative et les clips musicaux expérimentaux. 
-                            Chaque projet est une opportunité d'innover et de repousser les limites artistiques.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- CV & Compétences Section -->
-            <div class="cv-skills-section">
-                <div class="cv-header">
-                    <h3 class="cv-title">PARCOURS & COMPÉTENCES</h3>
-                </div>
-                
-                <div class="cv-grid">
-                    <div class="cv-column">
-                        <div class="cv-block">
-                            <h4>Formation</h4>
-                            <div class="cv-item">
-                                <div class="cv-year">2025</div>
-                                <div class="cv-details">
-                                    <strong>FEMIS, promotion 2025</strong>
-                                    <p>Spécialisation Direction de la Photographie</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="cv-block">
-                            <h4>Stages & Collaborations</h4>
-                            <div class="cv-item">
-                                <div class="cv-year">2024</div>
-                                <div class="cv-details">
-                                    <strong>Assistant Cadreur</strong>
-                                    <p>Productions Atlantique Films</p>
-                                </div>
-                            </div>
-                            <div class="cv-item">
-                                <div class="cv-year">2023</div>
-                                <div class="cv-details">
-                                    <strong>Stagiaire Éclairage</strong>
-                                    <p>TSF Productions</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="cv-column">
-                        <div class="cv-block">
-                            <h4>Compétences Techniques</h4>
-                            <div class="skills-grid">
-                                <div class="skill-category">
-                                    <h5>Caméras Maîtrisées</h5>
-                                    <ul>
-                                        <li>ARRI Alexa Mini/LF</li>
-                                        <li>RED Komodo/Raptor</li>
-                                        <li>Sony FX6/FX9</li>
-                                        <li>Canon C70/C300</li>
-                                    </ul>
-                                </div>
-                                
-                                <div class="skill-category">
-                                    <h5>Équipements Lumière</h5>
-                                    <ul>
-                                        <li>LED (ARRI, Aputure)</li>
-                                        <li>HMI (Tungsten)</li>
-                                        <li>Éclairage naturel</li>
-                                        <li>Réflecteurs & diffuseurs</li>
-                                    </ul>
-                                </div>
-                                
-                                <div class="skill-category">
-                                    <h5>Logiciels</h5>
-                                    <ul>
-                                        <li>DaVinci Resolve</li>
-                                        <li>Avid Media Composer</li>
-                                        <li>Adobe Premiere</li>
-                                        <li>Color Grading avancé</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="cv-download">
-                    <a href="#" class="btn-download-cv">
-                        <span class="download-icon">📄</span>
-                        TÉLÉCHARGER CV (PDF)
-                    </a>
                 </div>
             </div>
         </div>

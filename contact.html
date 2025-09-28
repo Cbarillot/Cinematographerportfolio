@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Louis Sorin</title>
+    <meta name="description" content="Contactez Louis Sorin - Directeur de la photographie pour vos projets">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600&family=Lato:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>LOUIS SORIN</h2></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="showreel.html" class="nav-link">SHOWREEL</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">À PROPOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">CONTACT</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="section-subtitle">TRAVAILLONS ENSEMBLE</span>
+                <h1 class="hero-title">
+                    CONTACTEZ
+                    <span class="highlight">MOI</span>
+                </h1>
+                <p class="hero-description">
+                    Vous avez un projet en tête ? Une collaboration à proposer ? 
+                    N'hésitez pas à me contacter pour discuter de votre vision créative.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>ENVOYEZ-MOI UN MESSAGE</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Société / Production</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project-type">Type de projet *</label>
+                            <select id="project-type" name="project-type" required>
+                                <option value="">Sélectionnez un type</option>
+                                <option value="fiction">Fiction</option>
+                                <option value="documentaire">Documentaire</option>
+                                <option value="clip">Clip musical</option>
+                                <option value="publicite">Publicité</option>
+                                <option value="mariage">Mariage</option>
+                                <option value="evenement">Événement</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="budget">Budget estimé</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Sélectionnez une fourchette</option>
+                                    <option value="moins-1k">Moins de 1 000€</option>
+                                    <option value="1k-5k">1 000€ - 5 000€</option>
+                                    <option value="5k-10k">5 000€ - 10 000€</option>
+                                    <option value="10k-plus">Plus de 10 000€</option>
+                                    <option value="non-defini">Non défini</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="timeline">Échéance souhaitée</label>
+                                <input type="date" id="timeline" name="timeline">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Description du projet *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Décrivez votre projet, vos attentes, votre vision créative..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>INFORMATIONS DE CONTACT</h2>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:contact@louissorin-dop.com">contact@louissorin-dop.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-text">
+                                <h4>Téléphone</h4>
+                                <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h4>Localisation</h4>
+                                <p>Paris, France<br>Déplacements possibles</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">🎬</div>
+                            <div class="contact-text">
+                                <h4>Disponibilité</h4>
+                                <p>Généralement sous 48h<br>Planning adaptable</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <h4>Suivez-moi</h4>
+                        <div class="social-icons">
+                            <a href="https://vimeo.com/louissorin" target="_blank" class="social-link">
+                                <span>Vimeo</span>
+                            </a>
+                            <a href="https://instagram.com/louissorin_dop" target="_blank" class="social-link">
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://linkedin.com/in/louissorin" target="_blank" class="social-link">
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="faq-section">
+                        <h4>Questions fréquentes</h4>
+                        <div class="faq-item">
+                            <h5>Quels sont vos tarifs ?</h5>
+                            <p>Mes tarifs varient selon la nature et la durée du projet. N'hésitez pas à me contacter pour un devis personnalisé.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h5>Vous déplacez-vous en région ?</h5>
+                            <p>Oui, je me déplace partout en France et à l'international selon les projets.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h5>Délai de réponse ?</h5>
+                            <p>Je réponds généralement sous 24-48h. Pour les urgences, contactez-moi directement par téléphone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Types -->
+    <section class="collaboration-types">
+        <div class="container">
+            <h2>TYPES DE COLLABORATIONS</h2>
+            <div class="collab-grid">
+                <div class="collab-item">
+                    <h3>🎬 FICTION</h3>
+                    <p>Courts et longs métrages, séries, contenus narratifs</p>
+                </div>
+                <div class="collab-item">
+                    <h3>📺 DOCUMENTAIRE</h3>
+                    <p>Documentaires créatifs, reportages, contenus institutionnels</p>
+                </div>
+                <div class="collab-item">
+                    <h3>🎵 CLIPS MUSICAUX</h3>
+                    <p>Vidéoclips artistiques, performances live, contenus musicaux</p>
+                </div>
+                <div class="collab-item">
+                    <h3>📢 PUBLICITÉ</h3>
+                    <p>Spots publicitaires, contenus de marque, campagnes visuelles</p>
+                </div>
+                <div class="collab-item">
+                    <h3>💒 ÉVÉNEMENTS</h3>
+                    <p>Mariages, événements corporates, captations live</p>
+                </div>
+                <div class="collab-item">
+                    <h3>🎨 EXPÉRIMENTAL</h3>
+                    <p>Projets artistiques, installations, contenus créatifs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message -->
+    <div id="success-message" class="success-message" style="display: none;">
+        <div class="success-content">
+            <h3>Message envoyé avec succès !</h3>
+            <p>Merci pour votre message. Je vous répondrai dans les plus brefs délais.</p>
+            <button onclick="closeSuccessMessage()" class="btn btn-outline">Fermer</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>LOUIS SORIN</h3>
+                    <p>Directeur de la Photographie</p>
+                </div>
+                <div class="footer-links">
+                    <a href="showreel.html">Showreel</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="projets.html">Projets</a>
+                    <a href="about.html">À propos</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Louis Sorin. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate form submission
+            setTimeout(() => {
+                document.getElementById('success-message').style.display = 'flex';
+                this.reset();
+            }, 1000);
+        });
+
+        function closeSuccessMessage() {
+            document.getElementById('success-message').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
